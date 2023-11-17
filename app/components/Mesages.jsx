@@ -2,9 +2,16 @@
 import React, { useState } from 'react'
 import styles from '../styles/mesages.module.css'
 
-const Mesages = ({message}) => {
+const data = [
+  'Hello! NextJs is one of the leading javascript framework',
+  'You have to challenge yourself today',
+  "Don't forget to code everyday"
+]
+
+const Mesages = () => {
     const [isOpen, setIsOpen]= useState(true)
     const [step,setStep] = useState(1)
+    
      const handleNext =()=>{
         if(step<3) setStep(c=>c+1)
         console.log(step)
@@ -28,7 +35,7 @@ const Mesages = ({message}) => {
             <span className={step===3?styles.active:styles.steps}>3</span>
         </div>
         <div className={styles.message}>
-           {step} : {message[step-1]} 
+           Step: {step}  {data[step-1]} 
         </div>
         <div className={styles.btnContainer}>
             <button className={styles.btn} onClick={handlePrev}>Previous</button>

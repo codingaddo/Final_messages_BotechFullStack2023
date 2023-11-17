@@ -11,7 +11,7 @@ const data =[
 export default function Home() {
   return (
    <div className={styles.main}>
-    <Mesages message={data}/>
+    <Mesages/>
    </div>
   )
 }
