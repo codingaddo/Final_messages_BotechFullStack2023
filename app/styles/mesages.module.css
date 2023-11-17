@@ -1,0 +1,85 @@
+.container{
+    width: 450px;
+    height: 250px;
+    background-color: rgb(147, 203, 236);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px;
+   
+}
+
+.stepContainer{
+    display: flex;
+    gap: 120px;
+}
+.steps{
+    background-color: rgb(76, 113, 248);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.btn{
+    background-color: rgb(185, 118, 247);
+    color: white;
+    font-weight: 900;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+
+.active{
+        background-color: blueviolet;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        font-weight: 900;
+        font-size: 1.2em;
+}
+
+.message{
+    text-align: center;
+}
+.toggle{
+    background-color: rgba(199, 202, 202, 0.619);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    right: 300px;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.toggle:hover{
+    background-color: rgba(108, 112, 112, 0.619);
+}
